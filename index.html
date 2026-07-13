@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1 id="heading">Expense Tracker</h1>
+    <div class="displayExpense">
+        <div class="totalBudget"><h3>Total Budget</h3><p id="totalBudgetText"></p></div>
+        <div class="spentAmount"><h3>Spent Amount</h3><p id="spentAmountText"></p></div>
+        <div class="remainingAmount"><h3>Balance</h3><p id="remainingAmountText"></p></div>
+    </div>
+    <div class="addBudget">
+        <label for="Budget">Add Your Budget:</label>
+        <input id="addBudget" type="text" placeholder="50000">
+        <button id="submitBudget">Submit</button>
+    </div>
+    <div class="addExpense">
+        <label for="amount">Add Your Expense Amount:</label>
+        <input id="addAmount" type="text" placeholder="150">
+        <label for="categories">Choose a category:</label>
+        <select id="category">
+            <option value="food">Food</option>
+            <option value="education">Education</option>
+            <option value="travel">Travel</option>
+            <option value="others">Others</option>
+        </select>
+        <label for="dates">Date:</label>
+        <input type="date" id="expenseDate">    
+        <button id="submitExpense">Submit</button>
+    </div>
+    <div id="expenseList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
